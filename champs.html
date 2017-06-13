@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" language="javascript" src="percentage.json"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $( function() {
+    
+    var availableTags = [];
+    for( i =0; i<Object.keys(percent).length; i++){
+        //console.log(Object.keys(percent)[i]);
+        availableTags.push(Object.keys(percent)[i]);
+    }
+    $( "#tags1" ).autocomplete({
+      source: availableTags
+    });
+    $( "#tags2" ).autocomplete({
+      source: availableTags
+    });
+    $( "#tags3" ).autocomplete({
+      source: availableTags
+    });
+    $( "#tags4" ).autocomplete({
+      source: availableTags
+    });
+    $( "#tags5" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+  function calculate() {
+   champion1 = document.getElementById("tags1").value; 
+   champion2 = document.getElementById("tags2").value; 
+   champion3 = document.getElementById("tags3").value; 
+   champion4 = document.getElementById("tags4").value; 
+   champion5 = document.getElementById("tags5").value; 
+
+   chance = (Number(percent[champion1])+Number(percent[champion2])+Number(percent[champion3])+Number(percent[champion4])+Number(percent[champion5]))/5;
+   document.getElementById("output").innerText = chance + "% of winning";
+}
+  </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">The Howling Abyss</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+  </div>
+</nav>
+<center>
+<h1 style="font-size:120px; color:white; margin:100px;" id = "output"></h1>
+</center>
+<div style="margin-top:300px;">
+<div class="row">
+    <div class="col-md-2 col-md-offset-1">
+        <div class="ui-widget" style="background-color:transparent;">
+            <input id="tags1">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="ui-widget" style="background-color:transparent;">
+            <input id="tags2">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="ui-widget" style="background-color:transparent;">
+            <input id="tags3">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="ui-widget" style="background-color:transparent;">
+            <input id="tags4">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="ui-widget" style="background-color:transparent;">
+            <input id="tags5">
+        </div>
+    </div>
+</div>
+
+ <center>
+ <button onclick="calculate()">Calculate!</button>
+ </center>
+ </div>
+</body>
+</html>
