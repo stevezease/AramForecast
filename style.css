@@ -5,3 +5,149 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.tags{
+    background-color: #1e2328;
+  border: 1px solid #efbe48;
+  color:white;
+  height:13.5vh;
+  background-size:15vh 15vh;
+  width:330px;
+  border-radius: 5px;
+  font-size: 135%;
+  cursor:pointer;
+  text-align: center;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  padding-left: 110px;
+   /*background-size:cover;
+   background-position: center; */
+   transition: all 1s ease-in-out !important;
+   margin-bottom: 10px;
+
+}
+#tags1,#tags2,#tags3,#tags4,#tags5 {
+  background-color: #1e2328;
+  border: 2px ridge #efbe48;
+  color:white;
+  height:13.5vh;
+  background-size:15vh 15vh;
+  width:330px;
+  border-radius: 5px;
+  font-size: 135%;
+  cursor:pointer;
+  text-align: center;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  padding-left: 110px;
+   transition: all 1s ease-in-out !important;
+   margin-bottom: 10px;
+ }
+ #tags1:hover,#tags2:hover,#tags3:hover,#tags4:hover,#tags5:hover,
+ #tags1:active,#tags2:active,#tags3:active,#tags4:active,#tags5:active {
+  background-color: #374049!important; 
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.8)!important;
+  transition: all .5s ease-in!important;
+ }
+#tags1:focus,#tags2:focus,#tags3:focus,#tags4:focus,#tags5:focus{
+  background-color: #374049!important;
+  border-color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.myButton{
+  background:url(res/Confirm.png) no-repeat;
+  cursor:pointer;
+  border:none;
+  width:133px;
+}
+.myButton:hover {
+ background:url(res/Confirmh.png) no-repeat;
+ -o-transition:1s;
+ -ms-transition:1s;
+ -moz-transition:1s;
+ -webkit-transition:1s;
+ /* ...and now for the proper property */
+ transition:1s;
+}
+.myButton:active {
+ background:url(res/Confirmh.png) no-repeat;
+}
+
+.champimg{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	
+}
+.edit{
+  
+}
+.ui-widget-content {
+  border: 2px ridge #efbe48;
+  background: #1e2328;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 100px;
+}
+
+#results{
+  max-height:520px;
+  display:none;
+}
+
+#teamtype,#builds{
+background-color: #1e2328;
+border: 2px ridge #efbe48;
+border-radius: 5px;
+color:#efbe48;
+min-height:175px;
+height:24vh;
+}
+
+#compare{
+background-color: #1e2328;
+border: 2px ridge #efbe48;
+border-radius: 5px;
+color:#efbe48;
+min-height:330px;
+height:41vh;
+}
+#winrate,#relation{
+background-color: #1e2328;
+border: 2px ridge #efbe48;
+border-radius: 5px;
+color:#efbe48;
+height:21vh;
+min-height:165px;
+}
+
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: #efbe48;
+  border: 2px outset #efbe48;
+  font-size:135%;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+  border-color 0.2s ease-out;
+  cursor:pointer;
+  background-color: #1e2328;
+  opacity:.9;
+  margin: 20px;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #374049;
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.8);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.8);
+  transition: color 0.5s ease-in,  background-color 0.5s ease-in;
+  border-color 0.5s ease-in;
+}
+.ghost-button-semi-transparent:active {
+border: 2px inset #efbe48;}
