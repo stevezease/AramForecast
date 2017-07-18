@@ -1,5 +1,5 @@
 body { 
-  background: url(bg.jpg) no-repeat center center fixed; 
+  background: url(res/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,7 +110,7 @@ border: 2px ridge #efbe48;
 border-radius: 5px;
 color:#efbe48;
 min-height:330px;
-height:41vh;
+height:72vh;
 }
 #winrate,#relation{
 background-color: #1e2328;
